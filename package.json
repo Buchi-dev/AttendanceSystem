@@ -1,0 +1,24 @@
+{
+  "name": "attendance-system",
+  "version": "1.0.0",
+  "description": "Full-stack attendance management system",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm run dev",
+    "server": "cd server && node index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-deps": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": [
+    "attendance",
+    "events",
+    "react",
+    "express",
+    "sqlite"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
